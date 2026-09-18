@@ -8,11 +8,11 @@ SC_MODULE(Talker){
 	}
 	void run() {
 		wait(10, SC_NS);
-		std::cout<<"run hello at "<< sc_time_stamp() << "\n";
+		std::cout<<"run hello at "<< name() <<" "<< sc_time_stamp() << "\n";
 	}
 	void runtw(){
 		while(true){
-			std::cout<<"runtw hello at "<< sc_time_stamp() << "\n";
+			std::cout<<"runtw hello at "<<name()<<" "<< sc_time_stamp() << "\n";
 			wait(10, SC_NS);
 			if(sc_time_stamp()==sc_time(100,SC_NS)){
 				sc_stop();
