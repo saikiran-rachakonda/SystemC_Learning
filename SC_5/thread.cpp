@@ -13,22 +13,22 @@ SC_MODULE(Thread){
 	//sc_inout<int>b;	
 	void A(){
 		while(true){
-		std::cout<<"hello!";
-	//	a.write(b.read());
 		wait(1,SC_NS);
+		std::cout<<"hello!"<<sc_time_stamp()<<std::endl;
+	//	a.write(b.read());
 		}
 	}
 	void B(){
 		while(true){
 		//b.write(a.read());
-		std::cout<<"world!";
+		std::cout<<"world!"<<sc_time_stamp()<<std::endl;
 		wait(1,SC_NS);
 		}
 	}
 	void C(){
 		while(true){
-			std::cout<<std::endl;
 			wait(1,SC_NS);
+			std::cout<<sc_time_stamp()<<std::endl;
 		}
 	}
 	//void display(){
