@@ -14,7 +14,8 @@ SC_MODULE(events){
 	void thread_one(){
 		while(true){
 			std::cout<<sc_time_stamp()<< " t1 "<<std::endl;
-			t2_event.notify(1,SC_NS);
+			t2_event.notify(2,SC_NS);
+			//t2_event.notify(1,SC_NS);
 			wait(t1_event);
 		}
 	}
