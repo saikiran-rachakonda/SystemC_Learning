@@ -1,0 +1,8 @@
+0 s: Warning: ctor: register function
+In file: report.cpp:8
+0 s: Info: main: simulation starts
+0 s: Info: writer: write1
+0 s: Info: reader: read1
+1 s: Info: writer: write2
+1 s: Info: reader: read2
+2 s: Info: main: simulation ends
