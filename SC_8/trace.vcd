@@ -1,5 +1,5 @@
 $date
-     Sep 21, 2026       11:57:36
+     Sep 21, 2026       12:49:34
 $end
 
 $version
@@ -11,7 +11,10 @@ $timescale
 $end
 
 $scope module SystemC $end
-$var wire   32  aaaaa  signal [31:0]  $end
+$scope module customized_type $end
+$var wire   32  aaaaa  x [31:0]  $end
+$var wire   32  aaaab  y [31:0]  $end
+$upscope $end
 $upscope $end
 $enddefinitions  $end
 
@@ -21,18 +24,11 @@ $end
 
 $dumpvars
 b1 aaaaa
+b10 aaaab
 $end
 
 #1000000000000
 b10 aaaaa
+b11 aaaab
 
 #2000000000000
-b11 aaaaa
-
-#3000000000000
-b100 aaaaa
-
-#4000000000000
-b101 aaaaa
-
-#5000000000000
